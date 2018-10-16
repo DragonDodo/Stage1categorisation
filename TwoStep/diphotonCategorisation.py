@@ -49,7 +49,7 @@ if not opts.dataFrame:
   for proc,fn in procFileMap.iteritems(): #proc,fn are like i,j, key,data
       trainFile   = r.TFile('%s/%s'%(trainDir,fn)) #set up treefile to train from
       if proc[-1].count('h') or 'vbf' in proc: trainTree = trainFile.Get('vbfTagDumper/trees/%s_125_13TeV_VBFDiJet'%proc)
-      else: trainTree = trainFile.Get('vbfTagDumper/trees/%s_13TeV_VBFDiJet'%proc) #ASK ED. WHY ARE THEY THE SAME. WHAT IS IT DOING FOR PROC[-1] COUNT H???
+      else: trainTree = trainFile.Get('vbfTagDumper/trees/%s_13TeV_VBFDiJet'%proc) #cheating
       trainTree.SetBranchStatus('nvtx',0) #set values of branches of the training tree. Name of branch, variable value.
       trainTree.SetBranchStatus('VBFMVAValue',0)
       trainTree.SetBranchStatus('dijet_*',0)
