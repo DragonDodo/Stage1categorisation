@@ -13,7 +13,7 @@ from otherHelpers import prettyHist, getAMS, computeBkg, getRealSigma
 from root_numpy import tree2array, fill_hist
 import usefulStyle as useSty
 
-#configure optionnd also testing git
+#configure sijofxdkljfhmgckljtomfklc:esting git
 from optparse import OptionParser
 parser = OptionParser()
 parser.add_option('-t','--trainDir', help='Directory for input files')
