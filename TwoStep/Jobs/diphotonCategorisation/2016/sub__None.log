@@ -50,3 +50,356 @@ area under roc curve for training set = 0.812
 area under roc curve for test set     = 0.811
 Failure..
 /srv/localstage/scratch/4426618.1.hep.q
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.778
+area under roc curve for test set     = 0.782
+Alternative training performance:
+area under roc curve for training set = 0.810
+area under roc curve for test set     = 0.811
+Failure..
+/srv/localstage/scratch/4442874.1.hep.q
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.782
+area under roc curve for test set     = 0.771
+Alternative training performance:
+area under roc curve for training set = 0.816
+area under roc curve for test set     = 0.802
+Failure..
+/srv/localstage/scratch/4442880.1.hep.q
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.783
+area under roc curve for test set     = 0.771
+Alternative training performance:
+area under roc curve for training set = 0.818
+area under roc curve for test set     = 0.802
+Failure..
+/srv/localstage/scratch/4442882.1.hep.q
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.778
+area under roc curve for test set     = 0.773
+Alternative training performance:
+area under roc curve for training set = 0.812
+area under roc curve for test set     = 0.808
+Failure..
+/srv/localstage/scratch/4450241.1.hep.q
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.780
+area under roc curve for test set     = 0.776
+Alternative training performance:
+area under roc curve for training set = 0.814
+area under roc curve for test set     = 0.812
+Failure..
+/srv/localstage/scratch/4450404.1.hep.q
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.779
+area under roc curve for test set     = 0.780
+Alternative training performance:
+area under roc curve for training set = 0.814
+area under roc curve for test set     = 0.809
+Failure..
+/srv/localstage/scratch/4450406.1.hep.q
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.777
+area under roc curve for test set     = 0.771
+Alternative training performance:
+area under roc curve for training set = 0.813
+area under roc curve for test set     = 0.807
+Failure..
+/srv/localstage/scratch/4450408.1.hep.q
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+.812
+area under roc curve for test set     = 0.810
+Failure..
+/srv/localstage/scratch/4450621.1.hep.q
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+fradone
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+der roc curve for training set = 0.778done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.776
+area under roc curve for test set     = 0.777
+Alternative training performance:
+area under roc curve for training set = 0.812
+area under roc curve for test set     = 0.809
+Failure..
+/srv/localstage/scratch/4450811.1.hep.q
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+W_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.778
+area under roc curve for test set     = 0.769
+Alternative training performance:
+area under roc curve for training set = 0.815
+area under roc curve for test set     = 0.802
+Failure..
+/srv/localstage/scratch/4450813.1.hep.q
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.781
+area under roc curve for test set     = 0.773
+Alternative training performance:
+area under roc curve for training set = 0.814
+area under roc curve for test set     = 0.805
+Failure..
+/srv/localstage/scratch/4450617.1.hep.q
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.776
+area under roc curve for test set     = 0.786
+Alternative training performance:
+area under roc curve for training set = 0.810
+area under roc curve for test set     = 0.813
+Failure..
+/srv/localstage/scratch/4450809.1.hep.q
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
+                                                                                                                                                       done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.780
+area under roc curve for test set     = 0.773
+Alternative training performance:
+area under roc curve for training set = 0.816
+area under roc curve for test set     = 0.807
+Failure..
+/srv/localstage/scratch/4450690.1.hep.q
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/diphoModel.model
+about to train alternative diphoton BDT
+done
+saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/models/altDiphoModel.model
+Default training performance:
+area under roc curve for training set = 0.778
+area under roc curve for test set     = 0.776
+Alternative training performance:
+area under roc curve for training set = 0.815
+area under roc curve for test set     = 0.806
+Failure..
+/srv/localstage/scratch/4450706.1.hep.q
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+About to run the following command:
+python diphotonCategorisation.py -t /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/trees --intLumi 35.9
+got trees
+created total frame
+done mass cuts
+done basic preselection cuts
+about to add extra columns
+all columns added
+frame saved as /vols/build/cms/dv814/CMSSW_10_2_0/src/2016/frames/trainTotal.pkl
+sigSumW 57.832657
+bkgSumW 49470.542969
+ratio 0.001169
+about to train diphoton BDT
