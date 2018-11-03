@@ -15,10 +15,11 @@ intLumi = 35.9
 #intLumi = 41.5
 
 script    = 'diphotonCategorisation.py'
-paramSets = [None,'max_depth:20']
-models    = None
-#dataFrame = 'trainTotal.pkl'
-dataFrame = None
+#paramSets = ['max_depth:6']
+paramSets = ['max_depth:4','max_depth:5','max_depth:6','max_depth:7','max_depth:8','max_depth:9','max_depth:10','max_depth:11']
+models    = None#'diphoModel__max_depth_18.model'
+dataFrame = 'trainTotal.pkl'
+#dataFrame = None
 sigFrame  = None
 
 #script    = 'dataSignificances.py'
@@ -49,7 +50,7 @@ if __name__=='__main__':
     if 'VBF' in script: trainDir  = '%s/%s/ForVBF/trees'%(baseDir,year) #FIXME
     theCmd = 'python %s -t %s '%(script, trainDir)
     if dataFrame: 
-      theCmd += '-d %s '%dataFrame
+      theCmd += '-d %s/%s/frames/%s '%(baseDir, year, dataFrame)
     if sigFrame: 
       theCmd += '-s %s '%sigFrame
     if intLumi: 
@@ -64,5 +65,5 @@ if __name__=='__main__':
     elif models:
       for model in models:
         fullCmd = theCmd
-        if model: fullCmd += '-m %s '%model
+        if model: fullCmd += '-m %s/%s/models/%s '%(baseDir, year, model)
         submitJob( jobDir, fullCmd, model=model, dryRun=dryRun )

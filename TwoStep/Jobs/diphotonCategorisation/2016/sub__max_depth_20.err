@@ -1,0 +1,88 @@
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+[12:35:42] Tree method is automatically selected to be 'approx' for faster speed. to use old behavior(exact greedy algorithm on single machine), set tree_method to 'exact'
+[12:35:52] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 38 extra nodes, 0 pruned nodes, max_depth=10
+[12:36:02] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 112 extra nodes, 0 pruned nodes, max_depth=19
+[12:36:12] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 178 extra nodes, 0 pruned nodes, max_depth=20
+[12:36:21] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 174 extra nodes, 0 pruned nodes, max_depth=15
+[12:36:32] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 290 extra nodes, 0 pruned nodes, max_depth=19
+[12:36:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 480 extra nodes, 0 pruned nodes, max_depth=20
+[12:36:56] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 562 extra nodes, 0 pruned nodes, max_depth=20
+[12:37:08] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 742 extra nodes, 0 pruned nodes, max_depth=20
+[12:37:21] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 888 extra nodes, 0 pruned nodes, max_depth=19
+[12:37:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 1132 extra nodes, 0 pruned nodes, max_depth=20
+[12:37:36] Tree method is automatically selected to be 'approx' for faster speed. to use old behavior(exact greedy algorithm on single machine), set tree_method to 'exact'
+[12:38:13] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 89654 extra nodes, 0 pruned nodes, max_depth=20
+[12:38:49] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 97656 extra nodes, 0 pruned nodes, max_depth=20
+[12:39:26] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 100298 extra nodes, 0 pruned nodes, max_depth=20
+[12:40:04] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 99356 extra nodes, 0 pruned nodes, max_depth=20
+[12:40:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 105112 extra nodes, 0 pruned nodes, max_depth=20
+[12:41:21] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 103918 extra nodes, 0 pruned nodes, max_depth=20
+[12:42:01] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 110854 extra nodes, 0 pruned nodes, max_depth=20
+[12:42:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 103542 extra nodes, 0 pruned nodes, max_depth=20
+[12:43:17] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 101296 extra nodes, 0 pruned nodes, max_depth=20
+[12:43:56] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 102598 extra nodes, 0 pruned nodes, max_depth=20
+Plotting not working for now so exit
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+[12:19:27] Tree method is automatically selected to be 'approx' for faster speed. to use old behavior(exact greedy algorithm on single machine), set tree_method to 'exact'
+[12:19:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 30 extra nodes, 0 pruned nodes, max_depth=8
+[12:19:45] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 122 extra nodes, 0 pruned nodes, max_depth=18
+[12:19:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 118 extra nodes, 0 pruned nodes, max_depth=13
+[12:20:04] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 216 extra nodes, 0 pruned nodes, max_depth=18
+[12:20:15] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 330 extra nodes, 0 pruned nodes, max_depth=20
+[12:20:26] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 430 extra nodes, 0 pruned nodes, max_depth=18
+[12:20:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 590 extra nodes, 0 pruned nodes, max_depth=20
+[12:20:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 680 extra nodes, 0 pruned nodes, max_depth=19
+[12:21:04] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 976 extra nodes, 0 pruned nodes, max_depth=20
+[12:21:17] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 1124 extra nodes, 0 pruned nodes, max_depth=20
+[12:21:18] Tree method is automatically selected to be 'approx' for faster speed. to use old behavior(exact greedy algorithm on single machine), set tree_method to 'exact'
+[12:21:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 88966 extra nodes, 0 pruned nodes, max_depth=20
+[12:22:26] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 91528 extra nodes, 0 pruned nodes, max_depth=20
+[12:23:00] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 102578 extra nodes, 0 pruned nodes, max_depth=20
+[12:23:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 100292 extra nodes, 0 pruned nodes, max_depth=20
+[12:24:11] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 108710 extra nodes, 0 pruned nodes, max_depth=20
+[12:24:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 110902 extra nodes, 0 pruned nodes, max_depth=20
+[12:25:23] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 108858 extra nodes, 0 pruned nodes, max_depth=20
+[12:25:59] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 109170 extra nodes, 0 pruned nodes, max_depth=20
+[12:26:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 106372 extra nodes, 0 pruned nodes, max_depth=20
+[12:27:09] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 101588 extra nodes, 0 pruned nodes, max_depth=20
+Plotting not working for now so exit
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file
+SysError in <TFile::TFile>: file /vols/cms/es811/Stage1categorisation/trainTrees/new.root can not be opened (No such file or directory)
+Warning in <TTree::SetCacheSizeAux>: A TTreeCache could not be created because the TTree has no file

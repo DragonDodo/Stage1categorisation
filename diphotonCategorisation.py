@@ -8,6 +8,7 @@ import pickle
 from sklearn.metrics import roc_auc_score, roc_curve
 from os import path, system
 
+
 from addRowFunctions import addPt, truthDipho, reco, diphoWeight, altDiphoWeight
 from otherHelpers import prettyHist, getAMS, computeBkg, getRealSigma
 from root_numpy import tree2array, fill_hist
@@ -28,7 +29,7 @@ trainDir = opts.trainDir
 if trainDir.endswith('/'): trainDir = trainDir[:-1] #:) 
 frameDir = trainDir.replace('trees','frames')
 if opts.trainParams: opts.trainParams = opts.trainParams.split(',')
-trainFrac = 0.7
+trainFrac = 0.6
 validFrac = 0.1
 
 #get trees from files, put them in data frames
@@ -89,7 +90,7 @@ if not opts.dataFrame:
   trainTotal = trainTotal[trainTotal.subleadmva>-0.9]
   trainTotal = trainTotal[trainTotal.leadptom>0.333]
   trainTotal = trainTotal[trainTotal.subleadptom>0.25]
-  trainTotal = trainTotal[trainTotal.stage1cat>-1.] #????????????????????????? what is this?
+  trainTotal = trainTotal[trainTotal.stage1cat>-1.] 
   print 'done basic preselection cuts'
   
   #add extra info to dataframe
@@ -181,6 +182,7 @@ print 'done'
 altDiphoModel.save_model('%s/altDiphoModel%s.model'%(modelDir,paramExt))
 print 'saved as %s/altDiphoModel%s.model'%(modelDir,paramExt)
 
+
 #check performance of each training
 diphoPredYxcheck = diphoModel.predict(trainingDipho)
 diphoPredY = diphoModel.predict(testingDipho)
@@ -188,14 +190,72 @@ print 'Default training performance:'
 print 'area under roc curve for training set = %1.3f'%( roc_auc_score(diphoTrainY, diphoPredYxcheck, sample_weight=diphoTrainFW) )
 print 'area under roc curve for test set     = %1.3f'%( roc_auc_score(diphoTestY, diphoPredY, sample_weight=diphoTestFW) )
 
-altDiphoPredYxcheck = altDiphoModel.predict(trainingDipho)
-altDiphoPredY = altDiphoModel.predict(testingDipho)
-print 'Alternative training performance:'
-print 'area under roc curve for training set = %1.3f'%( roc_auc_score(diphoTrainY, altDiphoPredYxcheck, sample_weight=diphoTrainFW) )
-print 'area under roc curve for test set     = %1.3f'%( roc_auc_score(diphoTestY, altDiphoPredY, sample_weight=diphoTestFW) )
+cutfr = 0.5 #fracton to keep for each jackknife iteration
+countvar = 0
+diLente = diphoTestX.shape[0]
+diLentr = diphoTrainX.shape[0]
+rocstest = []
+rocstrain = []
+
+while countvar <10:
+
+    diphoShufflete = np.random.permutation(diLente)  
+    diphoShuffletr = np.random.permutation(diLentr)
+    
+    testmatrix = diphoTestX[diphoShufflete][:int(diLente*cutfr)]
+    teyarray = diphoTestY[diphoShufflete][:int(diLente*cutfr)]
+    twarray = diphoTestFW[diphoShufflete][:int(diLente*cutfr)]
+    
+    trainmatrix = diphoTrainX[diphoShuffletr][:int(diLentr*cutfr)]
+    tryarray = diphoTrainY[diphoShuffletr][:int(diLentr*cutfr)]
+    tarray = diphoTrainAW[diphoShuffletr][:int(diLentr*cutfr)]    
+
+
+    testdmatrix = xg.DMatrix(testmatrix, label=diphoTestY[diphoShufflete][:int(diLente*cutfr)], weight=twarray, feature_names=diphoVars)
+    traindmatrix = xg.DMatrix(trainmatrix, label=diphoTrainY[diphoShuffletr][:int(diLentr*cutfr)], weight=tarray, feature_names=diphoVars)
+
+
+    diphoPredtest = altDiphoModel.predict(testdmatrix)
+    diphoPredtrain = altDiphoModel.predict(traindmatrix)
+    print 'jackknifing (ALT MODEL):'  
+
+    rocscoretest = roc_auc_score(teyarray, diphoPredtest, sample_weight=twarray)
+    rocscoretrain = roc_auc_score(tryarray,diphoPredtrain, sample_weight=tarray)
+    print 'area under training roc curve, iteration', countvar, '= %1.3f'%( rocscoretrain )
+    print 'area under test roc curve, iteration', countvar, '= %1.3f'%( rocscoretest )
+    rocstest.append(rocscoretest)
+    rocstrain.append(rocscoretrain)
+    countvar += 1
+
+print 'Mean = (train) ', np.mean(rocstrain)
+
+print 'Mean = (test) ', np.mean(rocstest)
+print 'Standard deviation (test) = ', np.std(rocstest)
+
+'''
+while countvar <3:    
+    testingDiphosize = testingDipho.num_row()*cutfr #gives the number of rows in the dmatrix
+    inds = range(0, int(testingDiphosize),1)
+    testingDipho = testingDipho.slice(inds) #FIX ME PROBLEM IS HERE
+    
+
+
+    diphoPredY2 = diphoModel.predict(testingDipho)
+    print 'jackknifing:'  
+    print 'area under roc curve for test set = %1.3f'%( roc_auc_score(diphoTestY, diphoPredY2, sample_weight=diphoTestFW) )
+    countvar +=1
+    
+print 'good cut!'
+'''
+#altDiphoPredYxcheck = altDiphoModel.predict(trainingDipho)
+#altDiphoPredY = altDiphoModel.predict(testingDipho)
+#print 'Alternative training performance:'
+#print 'area under roc curve for training set = %1.3f'%( roc_auc_score(diphoTrainY, altDiphoPredYxcheck, sample_weight=diphoTrainFW) )
+#print 'area under roc curve for test set     = %1.3f'%( roc_auc_score(diphoTestY, altDiphoPredY, sample_weight=diphoTestFW) )
 
 exit("Plotting not working for now so exit")
 #make some plots 
+
 plotDir = trainDir.replace('trees','plots')
 bkgEff, sigEff, nada = roc_curve(diphoTestY, diphoPredY, sample_weight=diphoTestFW)
 plt.figure(1)
