@@ -13,7 +13,7 @@ from otherHelpers import prettyHist, getAMS, computeBkg, getRealSigma
 from root_numpy import tree2array, fill_hist
 import usefulStyle as useSty
 
-#configure sijofxdkljfhmgckljtomfklc:esting git
+#configure options
 from optparse import OptionParser
 parser = OptionParser()
 parser.add_option('-t','--trainDir', help='Directory for input files')
@@ -25,14 +25,13 @@ parser.add_option('--trainParams',default=None, help='Comma-separated list of co
 
 #setup global variables
 trainDir = opts.trainDir
-if trainDir.endswith('/'): trainDir = trainDir[:-1] #:) 
+if trainDir.endswith('/'): trainDir = trainDir[:-1]
 frameDir = trainDir.replace('trees','frames')
 if opts.trainParams: opts.trainParams = opts.trainParams.split(',')
 trainFrac = 0.7
 validFrac = 0.1
 
 #get trees from files, put them in data frames
-#procfilemap is a dict. 
 procFileMap = {'ggh':'ggH.root', 'vbf':'VBF.root', 'tth':'ttH.root', 'wzh':'VH.root', 'dipho':'Dipho.root', 'gjet':'GJet.root', 'qcd':'QCD.root'}
 theProcs = procFileMap.keys()
 
@@ -46,17 +45,17 @@ trainTotal = None
 if not opts.dataFrame:
   trainFrames = {}
   #get the trees, turn them into arrays
-  for proc,fn in procFileMap.iteritems(): #proc,fn are like i,j, key,data
-      trainFile   = r.TFile('%s/%s'%(trainDir,fn)) #set up treefile to train from
+  for proc,fn in procFileMap.iteritems():
+      trainFile   = r.TFile('%s/%s'%(trainDir,fn))
       if proc[-1].count('h') or 'vbf' in proc: trainTree = trainFile.Get('vbfTagDumper/trees/%s_125_13TeV_VBFDiJet'%proc)
-      else: trainTree = trainFile.Get('vbfTagDumper/trees/%s_13TeV_VBFDiJet'%proc) #cheating
-      trainTree.SetBranchStatus('nvtx',0) #set values of branches of the training tree. Name of branch, variable value.
+      else: trainTree = trainFile.Get('vbfTagDumper/trees/%s_13TeV_VBFDiJet'%proc)
+      trainTree.SetBranchStatus('nvtx',0)
       trainTree.SetBranchStatus('VBFMVAValue',0)
       trainTree.SetBranchStatus('dijet_*',0)
       trainTree.SetBranchStatus('dZ',0)
       trainTree.SetBranchStatus('centralObjectWeight',0)
       trainTree.SetBranchStatus('rho',0)
-      trainTree.SetBranchStatus('nvtx',0) #WHY ARE THERE TWO THE SAME
+      trainTree.SetBranchStatus('nvtx',0)
       trainTree.SetBranchStatus('event',0)
       trainTree.SetBranchStatus('lumi',0)
       trainTree.SetBranchStatus('processIndex',0)
@@ -66,7 +65,7 @@ if not opts.dataFrame:
       newFile = r.TFile('/vols/cms/es811/Stage1categorisation/trainTrees/new.root','RECREATE')
       newTree = trainTree.CloneTree()
       trainFrames[proc] = pd.DataFrame( tree2array(newTree) )
-      del newTree #WHYYYY
+      del newTree
       del newFile
       trainFrames[proc]['proc'] = proc
   print 'got trees'
@@ -89,7 +88,7 @@ if not opts.dataFrame:
   trainTotal = trainTotal[trainTotal.subleadmva>-0.9]
   trainTotal = trainTotal[trainTotal.leadptom>0.333]
   trainTotal = trainTotal[trainTotal.subleadptom>0.25]
-  trainTotal = trainTotal[trainTotal.stage1cat>-1.] #????????????????????????? what is this?
+  trainTotal = trainTotal[trainTotal.stage1cat>-1.]
   print 'done basic preselection cuts'
   
   #add extra info to dataframe
@@ -131,14 +130,14 @@ diphoFW = trainTotal['weight'].values
 diphoM  = trainTotal['CMS_hgg_mass'].values
 del trainTotal
 
-diphoX  = diphoX[diphoShuffle] #shuffle indicies to mix up the production modes - going to split into training/test datasets so don't want
-diphoY  = diphoY[diphoShuffle] #them all in one.
+diphoX  = diphoX[diphoShuffle]
+diphoY  = diphoY[diphoShuffle]
 diphoTW = diphoTW[diphoShuffle]
 diphoAW = diphoAW[diphoShuffle]
 diphoFW = diphoFW[diphoShuffle]
 diphoM  = diphoM[diphoShuffle]
 
-diphoTrainX,  diphoValidX,  diphoTestX  = np.split( diphoX,  [diphoTrainLimit,diphoValidLimit] ) #splits dataset into training/validation/test
+diphoTrainX,  diphoValidX,  diphoTestX  = np.split( diphoX,  [diphoTrainLimit,diphoValidLimit] )
 diphoTrainY,  diphoValidY,  diphoTestY  = np.split( diphoY,  [diphoTrainLimit,diphoValidLimit] )
 diphoTrainTW, diphoValidTW, diphoTestTW = np.split( diphoTW, [diphoTrainLimit,diphoValidLimit] )
 diphoTrainAW, diphoValidAW, diphoTestAW = np.split( diphoAW, [diphoTrainLimit,diphoValidLimit] )
